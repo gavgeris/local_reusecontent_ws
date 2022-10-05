@@ -9,6 +9,7 @@ $functions = array(
         'description' => 'Allow Reuse Content from this Moodle Server',
         'type' => 'read',
         'ajax' => true,
+        'capabilities' => '',
     ),
 );
 

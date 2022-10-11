@@ -1,6 +1,7 @@
 <?php
 /*http://localhost/moodle310/webservice/rest/server.php?wstoken=5c0db9d3d86dac24650930f94402e58d&wsfunction=local_custom_service_update_courses_sections&moodlewsrestformat=json&courseids=6*/
 //https://moodle.lazy-dev.site/webservice/rest/server.php?wstoken=2196cb394cf4023272018828fbdeb865&wsfunction=local_reusecontent_ws_reuse&moodlewsrestformat=json
+//https://seminars.etwinning.gr/webservice/rest/server.php?wstoken=7531f0efa6571ee312307227bb933a19&wsfunction=local_reusecontent_ws_reuse&moodlewsrestformat=json&oer_query_string=item%3dGNRL_COURSE_LANDING_PAGE
 
 require_once('../../config.php');
 global $CFG,$DB;

@@ -12,10 +12,15 @@ class local_reusecontent_webservice_external extends external_api {
         global $CFG;
         require_once($CFG->dirroot . '/filter/reusecontent/filter.php');
 
+        $extra_css = "<style>"
+                     .get_config('local_reusecontent_ws', 'item_remote_servers_extra_css')
+                     ."</style>";
+
         $filter = new filter_reusecontent();
-        $text = "{reusecontent item=" . urldecode($oer_query_string) ."}";
+        $text = "{reusecontent " . urldecode($oer_query_string) ."}";
 //        echo(urlencode($filter->filter($text)));
-        return urlencode($filter->filter($text));
+        $style = "<style>.avgeris {display:none;}</style>";
+        return urlencode($extra_css. $filter->filter($text));
 
     }
 
